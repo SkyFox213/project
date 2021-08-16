@@ -6,6 +6,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<script type="text/javascript">
+var donationKakaopay = document.getElementById('qr_kakaopay'); 
+
+// 후원버튼 클릭했을 때 QR코드 불러오는 함수
+function showQR_kakaopay(){ 
+  if(donationKakaopay.style.display=="none"){
+    donationKakaopay.style.display="block";
+  } else {
+    donationKakaopay.style.display="none";
+  }
+}
+</script>
 	</head>
 	<body class="is-preload">
 
@@ -49,7 +61,7 @@
 							<h3>프로젝트 지원하기</h3>
 							<p>작은 후원으로 프로젝트를 응원할 수 있습니다</p>
 							<ul class="actions special">
-								<li><a href="download/index.html" class="button">후원하기</a></li>
+								<li><a href="download/index.html" class="button" onclick="showQR_kakaopay()">후원하기</a></li>
 							</ul>
 						</div>
 					</div>
